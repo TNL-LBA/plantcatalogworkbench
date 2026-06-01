@@ -1,0 +1,69 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Xcode user-specific state
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+
+# Xcode build products and indexes
+DerivedData/
+build/
+Build/
+*.build/
+*.xcresult
+*.dSYM/
+*.hmap
+*.ipa
+*.app
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Swift tooling caches
+.index-build/
+.sourcekit-lsp/
+
+# Logs and local environment
+*.log
+*.tmp
+*.swp
+*.swo
+.env
+.env.*
+!.env.example
+
+# Local plant catalog databases and generated SQLite files
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+
+# Keep source-controlled documentation in the initial database folder,
+# but never commit the plant catalog database itself.
+Apps/PlantCatalogWorkbench/resources/initials_database/*.sqlite
+Apps/PlantCatalogWorkbench/resources/initials_database/*.sqlite3
+Apps/PlantCatalogWorkbench/resources/initials_database/*.db
+
+# Plant Catalog Workbench local/generated workspace artifacts
+Workspaces/
+workspace-metadata.json
+catalog_working.sqlite
+audit/
+exports/
+
+# Archives and scratch material
+archive/
+Notes LBA.rtf
