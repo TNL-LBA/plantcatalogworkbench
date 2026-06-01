@@ -1,3 +1,12 @@
+//
+//  WorkspaceSession.swift
+//  Observable workspace selection state for the app shell.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import Foundation
 import Observation
 

@@ -1,3 +1,12 @@
+//
+//  AuditViewerView.swift
+//  Placeholder view for browsing audit session output.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import SwiftUI
 
 struct AuditViewerView: View {

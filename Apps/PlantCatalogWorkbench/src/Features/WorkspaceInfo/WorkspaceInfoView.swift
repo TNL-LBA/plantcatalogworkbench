@@ -1,3 +1,12 @@
+//
+//  WorkspaceInfoView.swift
+//  Form view for inspecting and editing workspace metadata.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import SwiftUI
 
 @MainActor

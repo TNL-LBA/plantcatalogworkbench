@@ -1,3 +1,12 @@
+//
+//  WorkspaceMetadata.swift
+//  Codable workspace metadata persisted to disk.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import Foundation
 
 struct WorkspaceMetadata: Codable, Equatable, Sendable {

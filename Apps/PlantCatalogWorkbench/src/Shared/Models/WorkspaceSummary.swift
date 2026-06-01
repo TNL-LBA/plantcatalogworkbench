@@ -1,3 +1,12 @@
+//
+//  WorkspaceSummary.swift
+//  Lightweight workspace summary used by the UI.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import Foundation
 
 struct WorkspaceSummary: Equatable, Identifiable {

@@ -1,0 +1,30 @@
+name: macOS Tests
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "feature/**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Build and Test
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: Apps/PlantCatalogWorkbench
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build and test
+        run: xcodebuild test -project PlantCatalogWorkbench.xcodeproj -scheme PlantCatalogWorkbench -destination "platform=macOS"

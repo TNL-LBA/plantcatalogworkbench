@@ -1,8 +1,23 @@
+//
+//  WorkspaceManager.swift
+//  Workspace filesystem and SQLite validation services.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import Foundation
+import OSLog
 import SQLite3
 
 @MainActor
 final class WorkspaceManager {
+    private static let logger = Logger(
+        subsystem: "nl.tientijd.PlantCatalogWorkbench",
+        category: "WorkspaceManager"
+    )
+
     private let sqliteTransient = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
 
     enum WorkspaceError: Equatable, LocalizedError {
@@ -472,9 +487,10 @@ final class WorkspaceManager {
             let existingColumns = try columnNames(in: tableName, database: database)
             let missingColumns = requiredColumns.subtracting(existingColumns).sorted()
             guard missingColumns.isEmpty else {
-                log("validateSchema: table=\(tableName) missingColumns=\(missingColumns.joined(separator: ", "))")
+                let missingColumnsDescription = missingColumns.joined(separator: ", ")
+                log("validateSchema: table=\(tableName) missingColumns=\(missingColumnsDescription)")
                 throw WorkspaceError.databaseSchemaMismatch(
-                    "Database schema version `\(schema.version)` table `\(tableName)` is missing columns: \(missingColumns.joined(separator: ", "))."
+                    "Database schema version `\(schema.version)` table `\(tableName)` is missing columns: \(missingColumnsDescription)."
                 )
             }
             log("validateSchema: table=\(tableName) columns ok")
@@ -523,7 +539,7 @@ final class WorkspaceManager {
     }
 
     private func log(_ message: String) {
-        print("[PlantCatalogWorkbench][WorkspaceManager] \(message)")
+        Self.logger.debug("\(message, privacy: .public)")
     }
 
     private func filePath(_ url: URL) -> String {

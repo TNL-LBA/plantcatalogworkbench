@@ -213,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71B6315FEF84C05D4CF0B287 /* Build configuration list for PBXNativeTarget "PlantCatalogWorkbench" */;
 			buildPhases = (
+				9D248A19D1A84BEA8F2A510C /* SwiftLint */,
 				8E1EF88C5740B32F0605A84E /* Sources */,
 			);
 			buildRules = (
@@ -245,6 +246,28 @@
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D248A19D1A84BEA8F2A510C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "if ! command -v swiftlint >/dev/null 2>&1; then\n  echo \"error: SwiftLint is not installed. Install it with: brew install swiftlint\"\n  exit 1\nfi\n\nswiftlint lint --strict --config ../../.swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXProject section */
 		10F4F8E56AF6B0E9B04619F6 /* Project object */ = {

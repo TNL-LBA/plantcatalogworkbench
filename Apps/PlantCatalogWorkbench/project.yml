@@ -15,6 +15,17 @@ targets:
   PlantCatalogWorkbench:
     type: application
     platform: macOS
+    preBuildScripts:
+      - name: SwiftLint
+        basedOnDependencyAnalysis: false
+        shell: /bin/zsh
+        script: |
+          if ! command -v swiftlint >/dev/null 2>&1; then
+            echo "error: SwiftLint is not installed. Install it with: brew install swiftlint"
+            exit 1
+          fi
+
+          swiftlint lint --strict --config ../../.swiftlint.yml
     sources:
       - path: src
         excludes:

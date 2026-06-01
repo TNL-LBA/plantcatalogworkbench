@@ -1,3 +1,12 @@
+//
+//  WorkspaceSelectionView.swift
+//  New workspace creation flow and input database picker.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import AppKit
 import SwiftUI
 import UniformTypeIdentifiers

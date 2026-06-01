@@ -1,3 +1,12 @@
+//
+//  PlantCatalogWorkbenchTests.swift
+//  Unit tests for workspace and database behaviors.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import XCTest
 import SQLite3
 @testable import PlantCatalogWorkbench

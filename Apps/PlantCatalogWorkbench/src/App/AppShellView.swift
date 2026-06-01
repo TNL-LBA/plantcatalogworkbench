@@ -1,10 +1,27 @@
+//
+//  AppShellView.swift
+//  Main navigation shell for the workbench UI.
+//  Plant Catalog Workbench
+//
+//  Created by <#Author#> on <#Date#>.
+//  Copyright (c) <#Year#> <#Organization#>. All rights reserved.
+//
+
 import AppKit
+import OSLog
 import SwiftUI
 
 private enum SidebarDestination: Hashable {
     case info
     case plants
     case audit
+}
+
+private enum SidebarLogger {
+    static let logger = Logger(
+        subsystem: "nl.tientijd.PlantCatalogWorkbench",
+        category: "Sidebar"
+    )
 }
 
 @MainActor
@@ -32,9 +49,7 @@ struct AppShellView: View {
                             workspaceSummary: workspace,
                             workspaceRootURL: container.workspaceManager.workspaceRootDirectoryURL,
                             workspaceManager: container.workspaceManager,
-                            onWorkspaceUpdated: { updatedWorkspace in
-                                workspaceSession.updateCurrentWorkspace(updatedWorkspace)
-                            }
+                            onWorkspaceUpdated: workspaceSession.updateCurrentWorkspace
                         )
                     } else {
                         EmptyWorkbenchDetailView()
@@ -211,7 +226,7 @@ private struct SidebarView: View {
     }
 
     private func log(_ message: String) {
-        print("[PlantCatalogWorkbench][Sidebar] \(message)")
+        SidebarLogger.logger.debug("\(message, privacy: .public)")
     }
 }
 
