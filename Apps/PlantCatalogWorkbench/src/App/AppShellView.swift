@@ -56,7 +56,10 @@ struct AppShellView: View {
                     }
                 case .plants:
                     if let workspace = workspaceSession.currentWorkspace {
-                        PlantListView(workspaceSummary: workspace)
+                        PlantListView(
+                            workspaceSummary: workspace,
+                            modelService: container.plantFilterModelService
+                        )
                     } else {
                         EmptyWorkbenchDetailView()
                     }
@@ -68,7 +71,7 @@ struct AppShellView: View {
                     }
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
         .sheet(isPresented: $isPresentingNewWorkspaceSheet) {
             NewWorkspaceSheetView(

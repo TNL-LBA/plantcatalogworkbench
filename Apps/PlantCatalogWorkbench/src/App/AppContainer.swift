@@ -12,10 +12,12 @@ import Foundation
 @MainActor
 struct AppContainer {
     let workspaceManager: WorkspaceManager
+    let plantFilterModelService: PlantFilterModelServicing
     let dateProvider: () -> Date
 
     static let live = Self(
         workspaceManager: WorkspaceManager(),
+        plantFilterModelService: PlantFilterModelService(),
         dateProvider: Date.init
     )
 }

@@ -3,24 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0CAE30CDB232D83BBAB7651F /* WorkspaceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4C7440D159ED858D41A84D /* WorkspaceMetadata.swift */; };
+		0D3C3E3325E7E938C418CE1D /* GRDBPlantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D8CCC5B2258466492A4F4B /* GRDBPlantRepository.swift */; };
 		11C7FEE8262320AA598ECC91 /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B6305E07EA4F8E1C24A6DC /* PlantListView.swift */; };
+		1A1C26A3DB513B7A4C36AFD7 /* PlantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCAC445605048723A103CD1 /* PlantListViewModel.swift */; };
+		254F296AA709DD1FF37C59F1 /* PlantListFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CE632F7BF02490F2034B54 /* PlantListFeatureTests.swift */; };
 		3803EA49A2094918F4876756 /* WorkspaceSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87E34BD0A45AF5B86C4702 /* WorkspaceSession.swift */; };
 		455C82794353137873C8C0D2 /* PlantDetailInspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC1AC4C36749F270D9258A /* PlantDetailInspectorView.swift */; };
 		4D2F28C602209BF87E37C502 /* AuditViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD856EF20DF8DA72C77895 /* AuditViewerView.swift */; };
 		4ECABECDE88F2E85DA92AC2B /* WorkspaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84422071B9989BBF3E5F2F /* WorkspaceSelectionView.swift */; };
+		505FBCF811D87BB83F03FA30 /* PlantSQLGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2BBB7A4419AF6868D81327 /* PlantSQLGuard.swift */; };
 		5AD7503711792C5A60D86235 /* PlantCatalogWorkbenchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78D8CC40D076EE4BBC90199 /* PlantCatalogWorkbenchTests.swift */; };
 		5BA73ABFC935D9879C111547 /* WorkspaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258365E4E9D4C598CB169B96 /* WorkspaceSummary.swift */; };
 		66DF93D3CD14B5E4FB4EEBED /* WorkspaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EE12C5E7FA62DD1E0EAE4B /* WorkspaceManager.swift */; };
-		8A08F4DE39A44B6EBF7CF001 /* WorkspaceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A08F4DD39A44B6EBF7CF001 /* WorkspaceInfoView.swift */; };
 		AF13D1F567F30230BFE3A848 /* NameParsingReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806D746BAC5ECFE3E434EF3 /* NameParsingReviewView.swift */; };
+		BBC1849C4F02B36BD5755A32 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 28EB4A0A9332CC17CE68530D /* GRDB */; };
 		C29B40C5B9B1809214A47A1C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3390F63A469759CE7B679520 /* AppContainer.swift */; };
+		D03C45DFF6CACA1E6D7D682E /* PlantFilterModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E50CE9204AA8C64652CB4F /* PlantFilterModelService.swift */; };
 		D53B65B65B0B6692C8D743D0 /* PromptCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA91C60F78B234CD25A7A25 /* PromptCatalog.swift */; };
+		E746487A780B1B12B846BA12 /* WorkspaceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85E00CC32BC40CE91BE5CAF /* WorkspaceInfoView.swift */; };
 		E97C41416191525D3270D106 /* PlantCatalogWorkbenchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B92C2E318D1D1DCFCDA151 /* PlantCatalogWorkbenchApp.swift */; };
+		EBE8A0FCBBBD3C5948DB5F34 /* PlantQueryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D424749C9C1948EF72AA9A7 /* PlantQueryModels.swift */; };
 		F7821601EA5D387E598D96B5 /* AppShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB965D129E8EFA1AFAEADA /* AppShellView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,16 +43,22 @@
 
 /* Begin PBXFileReference section */
 		258365E4E9D4C598CB169B96 /* WorkspaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSummary.swift; sourceTree = "<group>"; };
+		26CE632F7BF02490F2034B54 /* PlantListFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListFeatureTests.swift; sourceTree = "<group>"; };
 		3390F63A469759CE7B679520 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		3DDC1AC4C36749F270D9258A /* PlantDetailInspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailInspectorView.swift; sourceTree = "<group>"; };
 		40D7F68293B3C00E1690F0E5 /* PlantCatalogWorkbench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantCatalogWorkbench.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B92C2E318D1D1DCFCDA151 /* PlantCatalogWorkbenchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCatalogWorkbenchApp.swift; sourceTree = "<group>"; };
 		5A4C7440D159ED858D41A84D /* WorkspaceMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceMetadata.swift; sourceTree = "<group>"; };
+		5D424749C9C1948EF72AA9A7 /* PlantQueryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantQueryModels.swift; sourceTree = "<group>"; };
 		640206CA962A2DAFD5DCEBAB /* PlantCatalogWorkbenchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantCatalogWorkbenchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A08F4DD39A44B6EBF7CF001 /* WorkspaceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceInfoView.swift; sourceTree = "<group>"; };
+		76E50CE9204AA8C64652CB4F /* PlantFilterModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFilterModelService.swift; sourceTree = "<group>"; };
+		8F2BBB7A4419AF6868D81327 /* PlantSQLGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantSQLGuard.swift; sourceTree = "<group>"; };
+		99D8CCC5B2258466492A4F4B /* GRDBPlantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBPlantRepository.swift; sourceTree = "<group>"; };
 		A78D8CC40D076EE4BBC90199 /* PlantCatalogWorkbenchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCatalogWorkbenchTests.swift; sourceTree = "<group>"; };
 		AF87E34BD0A45AF5B86C4702 /* WorkspaceSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSession.swift; sourceTree = "<group>"; };
+		AFCAC445605048723A103CD1 /* PlantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListViewModel.swift; sourceTree = "<group>"; };
 		B6CD856EF20DF8DA72C77895 /* AuditViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditViewerView.swift; sourceTree = "<group>"; };
+		B85E00CC32BC40CE91BE5CAF /* WorkspaceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceInfoView.swift; sourceTree = "<group>"; };
 		BE84422071B9989BBF3E5F2F /* WorkspaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSelectionView.swift; sourceTree = "<group>"; };
 		D4B6305E07EA4F8E1C24A6DC /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
 		E6EE12C5E7FA62DD1E0EAE4B /* WorkspaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceManager.swift; sourceTree = "<group>"; };
@@ -54,7 +67,26 @@
 		FDA91C60F78B234CD25A7A25 /* PromptCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptCatalog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		1BEFB2A1837913F5B329AD83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC1849C4F02B36BD5755A32 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		301DBF46DEDEF8655D7A5355 /* ModelTools */ = {
+			isa = PBXGroup;
+			children = (
+				76E50CE9204AA8C64652CB4F /* PlantFilterModelService.swift */,
+			);
+			path = ModelTools;
+			sourceTree = "<group>";
+		};
 		3437CA0C4E2FADBE611C9EF5 /* WorkspaceSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +100,7 @@
 			children = (
 				F49DDB7FD7AE887A65B77AF1 /* Database */,
 				99332263E781FCBE3D107D3F /* Models */,
+				301DBF46DEDEF8655D7A5355 /* ModelTools */,
 				8277E561D6D5FD7C4E54ECC8 /* Prompts */,
 			);
 			path = Shared;
@@ -77,14 +110,24 @@
 			isa = PBXGroup;
 			children = (
 				A78D8CC40D076EE4BBC90199 /* PlantCatalogWorkbenchTests.swift */,
+				26CE632F7BF02490F2034B54 /* PlantListFeatureTests.swift */,
 			);
 			path = Unit;
+			sourceTree = "<group>";
+		};
+		4C4BED0749483E43753D466C /* WorkspaceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B85E00CC32BC40CE91BE5CAF /* WorkspaceInfoView.swift */,
+			);
+			path = WorkspaceInfo;
 			sourceTree = "<group>";
 		};
 		57E16F05BA1262B1E56F4A25 /* PlantList */ = {
 			isa = PBXGroup;
 			children = (
 				D4B6305E07EA4F8E1C24A6DC /* PlantListView.swift */,
+				AFCAC445605048723A103CD1 /* PlantListViewModel.swift */,
 			);
 			path = PlantList;
 			sourceTree = "<group>";
@@ -112,18 +155,10 @@
 				A182292AE0D7D0C48DE8E0BF /* NameParsing */,
 				67EC7E0610637BFABE682987 /* PlantDetail */,
 				57E16F05BA1262B1E56F4A25 /* PlantList */,
-				8A08F4DC39A44B6EBF7CF001 /* WorkspaceInfo */,
+				4C4BED0749483E43753D466C /* WorkspaceInfo */,
 				3437CA0C4E2FADBE611C9EF5 /* WorkspaceSelection */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		8A08F4DC39A44B6EBF7CF001 /* WorkspaceInfo */ = {
-			isa = PBXGroup;
-			children = (
-				8A08F4DD39A44B6EBF7CF001 /* WorkspaceInfoView.swift */,
-			);
-			path = WorkspaceInfo;
 			sourceTree = "<group>";
 		};
 		8277E561D6D5FD7C4E54ECC8 /* Prompts */ = {
@@ -147,6 +182,7 @@
 		99332263E781FCBE3D107D3F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D424749C9C1948EF72AA9A7 /* PlantQueryModels.swift */,
 				5A4C7440D159ED858D41A84D /* WorkspaceMetadata.swift */,
 				258365E4E9D4C598CB169B96 /* WorkspaceSummary.swift */,
 			);
@@ -201,6 +237,8 @@
 		F49DDB7FD7AE887A65B77AF1 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				99D8CCC5B2258466492A4F4B /* GRDBPlantRepository.swift */,
+				8F2BBB7A4419AF6868D81327 /* PlantSQLGuard.swift */,
 				E6EE12C5E7FA62DD1E0EAE4B /* WorkspaceManager.swift */,
 			);
 			path = Database;
@@ -213,8 +251,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71B6315FEF84C05D4CF0B287 /* Build configuration list for PBXNativeTarget "PlantCatalogWorkbench" */;
 			buildPhases = (
-				9D248A19D1A84BEA8F2A510C /* SwiftLint */,
+				05EFE6B23473F51944801D8D /* SwiftLint */,
 				8E1EF88C5740B32F0605A84E /* Sources */,
+				1BEFB2A1837913F5B329AD83 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +261,7 @@
 			);
 			name = PlantCatalogWorkbench;
 			packageProductDependencies = (
+				28EB4A0A9332CC17CE68530D /* GRDB */,
 			);
 			productName = PlantCatalogWorkbench;
 			productReference = 40D7F68293B3C00E1690F0E5 /* PlantCatalogWorkbench.app */;
@@ -246,28 +286,6 @@
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9D248A19D1A84BEA8F2A510C /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/zsh;
-			shellScript = "if ! command -v swiftlint >/dev/null 2>&1; then\n  echo \"error: SwiftLint is not installed. Install it with: brew install swiftlint\"\n  exit 1\nfi\n\nswiftlint lint --strict --config ../../.swiftlint.yml\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXProject section */
 		10F4F8E56AF6B0E9B04619F6 /* Project object */ = {
@@ -294,7 +312,9 @@
 			);
 			mainGroup = 9CA0F2CC5FBC9A18A988B6DC;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 54;
+			packageReferences = (
+				AD2C66FB6756EFA197D810C5 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -304,12 +324,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05EFE6B23473F51944801D8D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"\n\nif ! command -v swiftlint >/dev/null 2>&1; then\n    echo \"error: SwiftLint is not installed or not in PATH\"\n    echo \"PATH=$PATH\"\n    exit 1\nfi\n\nswiftlint lint --no-cache --strict --config ../../.swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18CE537CB856A86BEE09C26C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5AD7503711792C5A60D86235 /* PlantCatalogWorkbenchTests.swift in Sources */,
+				254F296AA709DD1FF37C59F1 /* PlantListFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,13 +363,18 @@
 				C29B40C5B9B1809214A47A1C /* AppContainer.swift in Sources */,
 				F7821601EA5D387E598D96B5 /* AppShellView.swift in Sources */,
 				4D2F28C602209BF87E37C502 /* AuditViewerView.swift in Sources */,
+				0D3C3E3325E7E938C418CE1D /* GRDBPlantRepository.swift in Sources */,
 				AF13D1F567F30230BFE3A848 /* NameParsingReviewView.swift in Sources */,
 				E97C41416191525D3270D106 /* PlantCatalogWorkbenchApp.swift in Sources */,
 				455C82794353137873C8C0D2 /* PlantDetailInspectorView.swift in Sources */,
+				D03C45DFF6CACA1E6D7D682E /* PlantFilterModelService.swift in Sources */,
 				11C7FEE8262320AA598ECC91 /* PlantListView.swift in Sources */,
+				1A1C26A3DB513B7A4C36AFD7 /* PlantListViewModel.swift in Sources */,
+				EBE8A0FCBBBD3C5948DB5F34 /* PlantQueryModels.swift in Sources */,
+				505FBCF811D87BB83F03FA30 /* PlantSQLGuard.swift in Sources */,
 				D53B65B65B0B6692C8D743D0 /* PromptCatalog.swift in Sources */,
+				E746487A780B1B12B846BA12 /* WorkspaceInfoView.swift in Sources */,
 				66DF93D3CD14B5E4FB4EEBED /* WorkspaceManager.swift in Sources */,
-				8A08F4DE39A44B6EBF7CF001 /* WorkspaceInfoView.swift in Sources */,
 				0CAE30CDB232D83BBAB7651F /* WorkspaceMetadata.swift in Sources */,
 				4ECABECDE88F2E85DA92AC2B /* WorkspaceSelectionView.swift in Sources */,
 				3803EA49A2094918F4876756 /* WorkspaceSession.swift in Sources */,
@@ -459,7 +507,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 0.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -526,7 +574,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 0.1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -571,6 +619,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD2C66FB6756EFA197D810C5 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28EB4A0A9332CC17CE68530D /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD2C66FB6756EFA197D810C5 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10F4F8E56AF6B0E9B04619F6 /* Project object */;
 }
